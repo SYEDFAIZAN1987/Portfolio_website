@@ -55,7 +55,7 @@ Summary:
 Dr. Syed Faizan is a dedicated and experienced professional currently pursuing a Master of Professional Studies in Analytics with a concentration in Applied Machine Learning at Northeastern University, Toronto. With over a decade of experience in clinical research, patient care, and public health education, Dr. Faizan is passionate about integrating his extensive medical background with advanced data analytics and machine learning techniques. His career spans various roles, from duty doctor to research assistant, highlighting his commitment to improving healthcare outcomes through innovation and efficiency.
 
 Education
-Master of Professional Studies in Analytics - Concentration: Applied Machine Learning
+Currently in his first year of Master of Professional Studies in Analytics - Concentration: Applied Machine Learning
 Northeastern University, Toronto, Canada
 January 2024 - December 2025
 
