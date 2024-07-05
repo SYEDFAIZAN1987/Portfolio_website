@@ -2,18 +2,62 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure the generative AI model
-genai.configure(api_key="AIzaSyCWGiPiKRlRueGT8pjGjmt4F2wzPQbxsMg")
+api_key = st.secrets("GOOGLE_API_KEY")
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-# Header section with an image
-col1, col2 = st.columns(2)
-with col1:
-    st.title("Hello 👋")
-    st.title("I am Syed Faizan")
-with col2:
-    st.image("images/Photo for portfolio.jpeg")
+# Add custom CSS for styling
+st.markdown(
+    """
+    <style>
+    .header {
+        background-color: #ADD8E6;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .subheader {
+        background-color: #87CEEB;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .section {
+        background-color: #E0FFFF;
+        color: #4682B4;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .button {
+        background-color: #4682B4;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .button a {
+        color: white;
+        text-decoration: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-st.title("Dr. Syed Faizan's AI Bot")
+# Header section with an image
+st.markdown('<div class="header"><h1>Hello 👋</h1><h2>I am Syed Faizan</h2></div>', unsafe_allow_html=True)
+
+col1, col2, col3 = st.columns(3)
+with col2:
+    st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Dr. Syed Faizan",
+             )
+
+st.markdown('<div class="header"><h1>Dr. Syed Faizan\'s AI Bot</h1></div>', unsafe_allow_html=True)
 
 # Persona details
 persona = """ 
@@ -131,36 +175,44 @@ As a dedicated healthcare professional and an emerging data scientist, Dr. Syed 
 """
 
 # User interaction section
-user_question = st.text_input("Ask me anything about Faizan")
-if st.button("ASK", use_container_width=True):
+st.markdown('<div class="section"><h3>Ask me anything about Faizan</h3>', unsafe_allow_html=True)
+user_question = st.text_input("")
+if st.button("ASK"):
     prompt = persona + "Here is the question that the user asked: " + user_question
     response = model.generate_content(prompt)
     st.write(response.text)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # About Me section
-col1, col2 = st.columns(2)
-with col1:
-    st.header("About Me")
-    with open("images/Resume_Syed_Faizan_2024_February.pdf", "rb") as file:
-        st.download_button(
-            label="Click here to download my PDF resume",
-            data=file,
-            file_name="Resume_Syed_Faizan_2024.pdf",
-            mime="application/pdf"
-        )
-    st.write("- A Physician with a passion for Data Science, Data Analysis and AI in Healthcare")
-    st.write("- Currently pursuing a Master's in Analytics and Applied Machine Learning at Northeastern University")
-    st.write("- I am deeply interested in Computer Vision Research for Medical imaging analysis")
+st.markdown('<div class="section"><h3>About Me</h3>', unsafe_allow_html=True)
+with open("images/Resume_Syed_Faizan_2024_February.pdf", "rb") as file:
+    st.download_button(
+        label="Click here to download my PDF resume",
+        data=file,
+        file_name="Resume_Syed_Faizan_2024.pdf",
+        mime="application/pdf"
+    )
+st.write("- A Physician with a passion for Data Science, Data Analysis and AI in Healthcare")
+st.write("- Currently pursuing a Master's in Analytics and Applied Machine Learning at Northeastern University")
+st.write("- I am deeply interested in Computer Vision Research for Medical imaging analysis")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Contact Me section
-st.header("Contact Me")
-st.markdown("[Click here to visit my LinkedIn](https://www.linkedin.com/in/drsyedfaizanmd/)")
-st.markdown("[Click here to email me](mailto:faizan.s@northeastern.edu)")
-st.markdown("[Click here to visit my Twitter](https://twitter.com/faizan_data_ml)")
-st.markdown("[Click here to visit my GitHub](https://github.com/SYEDFAIZAN1987)")
+st.markdown('<div class="section"><h3>Contact Me</h3>', unsafe_allow_html=True)
+col1, col2, col3 = st.columns(3)
+
+with col2:
+     st.markdown('<div class="button"><a href="https://www.linkedin.com/in/drsyedfaizanmd/">LinkedIn</a></div>', unsafe_allow_html=True)
+with col1:
+     st.markdown('<div class="button"><a href="mailto:faizan.s@northeastern.edu">Email</a></div>', unsafe_allow_html=True)
+with col2:
+     st.markdown('<div class="button"><a href="https://twitter.com/faizan_data_ml">Twitter</a></div>', unsafe_allow_html=True)
+with col3:
+     st.markdown('<div class="button"><a href="https://github.com/SYEDFAIZAN1987">GitHub</a></div>', unsafe_allow_html=True)
+     st.markdown('</div>', unsafe_allow_html=True)
 
 # Gallery section
-st.title("Gallery")
+st.markdown('<div class="section"><h3>Gallery</h3>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -176,3 +228,4 @@ with col2:
 with col3:
     st.image("images/col1 pic 3.jpeg")
     st.image("images/col1 pic 2.jpeg")
+st.markdown('</div>', unsafe_allow_html=True)
