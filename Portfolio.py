@@ -56,6 +56,14 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Syed Faizan",
              )
+with col2:
+    st.image("images/Christiana.jpeg", use_column_width=True, caption="Christiana")
+
+with col3:
+    st.image("images/Pravalika.jpeg", use_column_width=True, caption="Pravalika")
+
+with col4:
+    st.image("images/VrajShah.jpeg", use_column_width=True, caption="Vraj Shah")
     
 
 st.markdown("<div class=\"header\"><h1>ALY 6080 Group Project's AI Bot</h1></div>", unsafe_allow_html=True)
