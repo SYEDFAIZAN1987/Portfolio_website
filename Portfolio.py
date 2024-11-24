@@ -50,14 +50,14 @@ st.markdown(
 )
 
 # Header section with an image
-st.markdown('<div class="header"><h1>Hello 👋</h1><h2>We are ALY6080</h2></div>', unsafe_allow_html=True)
+st.markdown('<div class="header"><h1>Hello 👋</h1><h2>We are ALY6080 Group 1</h2></div>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 with col2:
     st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Dr. Syed Faizan",
              )
 
-st.markdown('<div class="header"><h1>Dr. Syed Faizan\'s AI Bot</h1></div>', unsafe_allow_html=True)
+st.markdown('<div class="header"><h1>ALY 6080 Group Project's\'s AI Bot</h1></div>', unsafe_allow_html=True)
 
 # Persona details
 persona = """ 
@@ -175,7 +175,7 @@ As a dedicated healthcare professional and an emerging data scientist, Dr. Syed 
 """
 
 # User interaction section
-st.markdown('<div class="section"><h3>Ask me anything about Faizan</h3>', unsafe_allow_html=True)
+st.markdown('<div class="section"><h3>Ask our report anything about the Group 1 ALY 6080 Group Project</h3>', unsafe_allow_html=True)
 user_question = st.text_input("")
 if st.button("ASK"):
     prompt = persona + "Here is the question that the user asked: " + user_question
