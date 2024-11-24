@@ -54,8 +54,7 @@ st.markdown('<div class="header"><h1>Hello 👋</h1><h2>We are ALY6080 Group 1</
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Syed Faizan",
-             )
+    st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Syed Faizan")
 with col2:
     st.image("images/Christiana.jpeg", use_column_width=True, caption="Christiana")
 
