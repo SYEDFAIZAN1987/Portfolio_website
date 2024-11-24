@@ -196,7 +196,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="section"><h3>About Our ALY 6080 Group 1 Project Deliverables</h3>', unsafe_allow_html=True)
 with open("images/Resume_Syed_Faizan_2024_February.pdf", "rb") as file:
     st.download_button(
-        label="Click here to download my PDF resume",
+        label="Click here to download our ALY 6080 Capstone Project Report",
         data=file,
         file_name="Resume_Syed_Faizan_2024.pdf",
         mime="application/pdf"
@@ -207,7 +207,7 @@ st.write("- We have used Machine Learning predictive algorithms, Python and R fo
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Contact Me section
-st.markdown('<div class="section"><h3>Contact Me</h3>', unsafe_allow_html=True)
+st.markdown('<div class="section"><h3>Contact the Team Lead Syed Faizan</h3>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 
 with col2:
@@ -235,6 +235,6 @@ with col2:
     st.image("images/col 2 pic 2.jpeg")
 
 with col3:
-    st.image("images/col1 pic 3.jpeg")
-    st.image("images/col1 pic 2.jpeg")
+    st.image("images/Pravalika.jpeg")
+    st.image("images/VrajShah.jpeg")
 st.markdown('</div>', unsafe_allow_html=True)
