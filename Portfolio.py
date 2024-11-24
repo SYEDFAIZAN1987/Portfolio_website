@@ -54,7 +54,7 @@ st.markdown('<div class="header"><h1>Hello 👋</h1><h2>We are ALY6080 Group 1</
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Syed Faizan")
+    st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption=" Team Lead : Syed Faizan")
 with col2:
     st.image("images/Christiana.jpeg", use_column_width=True, caption="Christiana")
 
@@ -193,7 +193,7 @@ if st.button("ASK"):
 st.markdown('</div>', unsafe_allow_html=True)
 
 # About Me section
-st.markdown('<div class="section"><h3>About Me</h3>', unsafe_allow_html=True)
+st.markdown('<div class="section"><h3>About Our ALY 6080 Group 1 Project Deliverables</h3>', unsafe_allow_html=True)
 with open("images/Resume_Syed_Faizan_2024_February.pdf", "rb") as file:
     st.download_button(
         label="Click here to download my PDF resume",
@@ -201,9 +201,9 @@ with open("images/Resume_Syed_Faizan_2024_February.pdf", "rb") as file:
         file_name="Resume_Syed_Faizan_2024.pdf",
         mime="application/pdf"
     )
-st.write("- A Physician with a passion for Data Science, Data Analysis and AI in Healthcare")
-st.write("- Currently pursuing a Master's in Analytics and Applied Machine Learning at Northeastern University")
-st.write("- I am deeply interested in Computer Vision Research for Medical imaging analysis")
+st.write("- Our deliverables include an ArcGIS Dashboard and story for Geographic Information and demographic analysis, Power BI Dashboards, Jupyter Notebook and R files, a Github repository, a report and this app")
+st.write("- Our Project focuses primarily on the demographics, housing stability and financial stability in the Toronto GTA and the interaction of these three domains")
+st.write("- We have used Machine Learning predictive algorithms, Python and R for Exploratory Data Analysis, Latex for report formulation and, Github and Gemini API, HTML,CSS and streamlit for our app")
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Contact Me section
