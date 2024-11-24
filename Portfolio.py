@@ -50,7 +50,7 @@ st.markdown(
 )
 
 # Header section with an image
-st.markdown('<div class="header"><h1>Hello 👋</h1><h2>I am Syed Faizan</h2></div>', unsafe_allow_html=True)
+st.markdown('<div class="header"><h1>Hello 👋</h1><h2>We are ALY6080</h2></div>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 with col2:
