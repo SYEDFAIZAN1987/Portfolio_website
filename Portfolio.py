@@ -57,7 +57,8 @@ with col2:
     st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Dr. Syed Faizan",
              )
 
-st.markdown('<div class="header"><h1>ALY 6080 Group Project's\ AI Bot</h1></div>', unsafe_allow_html=True)
+st.markdown("<div class=\"header\"><h1>ALY 6080 Group Project's AI Bot</h1></div>", unsafe_allow_html=True)
+
 
 # Persona details
 persona = """ 
