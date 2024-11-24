@@ -52,10 +52,11 @@ st.markdown(
 # Header section with an image
 st.markdown('<div class="header"><h1>Hello 👋</h1><h2>We are ALY6080 Group 1</h2></div>', unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns(3)
-with col2:
-    st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Dr. Syed Faizan",
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Syed Faizan",
              )
+    
 
 st.markdown("<div class=\"header\"><h1>ALY 6080 Group Project's AI Bot</h1></div>", unsafe_allow_html=True)
 
