@@ -5386,11 +5386,11 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 # About Me section
 st.markdown('<div class="section"><h3>About Our ALY 6080 Group 1 Project Deliverables</h3>', unsafe_allow_html=True)
-with open("images/Resume_Syed_Faizan_2024_February.pdf", "rb") as file:
+with open("images/ALY_6080_Experential_learning_Group_1_Module_12_Capstone_Sponsor_Deliverable.pdf", "rb") as file:
     st.download_button(
         label="Click here to download our ALY 6080 Capstone Project Report",
         data=file,
-        file_name="Resume_Syed_Faizan_2024.pdf",
+        file_name="ALY_6080_Experential_learning_Group_1_Module_12_Capstone_Sponsor_Deliverable.pdf",
         mime="application/pdf"
     )
 st.write("- Our deliverables include an ArcGIS Dashboard and story for Geographic Information and demographic analysis, Power BI Dashboards, Jupyter Notebook and R files, a Github repository, a report and this app")
