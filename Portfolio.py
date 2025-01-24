@@ -50,62 +50,81 @@ st.markdown(
 )
 
 # Header section with an image
-st.markdown('<div class="header"><h1>Hello 👋</h1><h2>We are ALY6080 Group 1</h2></div>', unsafe_allow_html=True)
+st.markdown('<div class="header"><h1>Hello 👋</h1><h2> I am Syed Faizan</h2></div>', unsafe_allow_html=True)
 
-col1, col2, col3, col4, col5, col6 = st.columns(6)
+col1 = st.columns(1)
 
 with col1:
-    st.image("images/Photo for portfolio.jpeg", use_column_width=True, caption="Team Lead: Syed Faizan")
+    st.image("images/Photo for portfolio.jpeg", use_container_width=True, caption="Syed Faizan")
 
-with col2:
-    st.image("images/Christiana.jpeg", use_column_width=True, caption="Christiana")
 
-with col3:
-    st.image("images/Pravalika.jpeg", use_column_width=True, caption="Pravalika")
-
-with col4:
-    st.image("images/VrajShah.jpeg", use_column_width=True, caption="Vraj Shah")
-
-with col5:
-    st.image("images/Emelia.jpeg", use_column_width=True, caption="Emelia Doku")
-
-with col6:
-    st.image("images/Schicheng.jpeg", use_column_width=True, caption="Shicheng Wan")
 
     
 
-st.markdown("<div class=\"header\"><h1>ALY 6080 Group Project's AI Bot</h1></div>", unsafe_allow_html=True)
+st.markdown("<div class=\"header\"><h1> Talk to my Resume Bot</h1></div>", unsafe_allow_html=True)
 
 
 # Persona details
 persona = """ 
-The report for United Way Greater Toronto (UWGT), led by Team Lead Syed Faizan, was developed by Group 1 ALY 6080 team members: Emelia Doku, Vraj Shah, Shicheng Wan, Pravalika Sorda, and Christiana Adjei. It aims to address socio-economic challenges in the Greater Toronto Area (GTA) through a data-driven approach, leveraging exploratory data analysis (EDA) and machine learning models to analyze trends and provide actionable insights.
+You are Syed Faizan's delegated chatbot, responsible for answering queries related to his resume. Your primary function is to provide responses only based on the details present in the resume text below. If a question cannot be answered from the provided resume, respond with: 
+"This question is beyond my purview to answer."
 
-The report investigates five critical domains: demographics, financial stability, housing stability, community services, and resident engagement. It draws from diverse data sources, including governmental and NGO reports, to ensure robust and accurate analyses. The findings aim to guide United Way in optimizing resource allocation and supporting vulnerable populations more effectively.
+Syed Faizan, MD – Resume
+Scarborough, Ontario • +1 289-885-4110 • faizan.s@northeastern.edu  
+LinkedIn: linkedin.com/in/drsyedfaizanmd  
+Personal Website: syedfaizaan.com  
+GitHub: https://github.com/SYEDFAIZAN1987  
+Hugging Face: https://huggingface.co/DrSyedFaizan  
 
-Key Findings and Insights:
+Professional Summary:
+- Graduate student in Data Analytics and Applied Machine Learning at Northeastern University.
+- Former physician with 10+ years of experience in clinical research, data analytics, and AI applications.
+- Expertise in medical imaging analysis, predictive modeling, Retrieval-Augmented Generation (RAG), and AI-driven decision-making.
+- Proficient in Python, R, SQL, Machine Learning, Deep Learning, NLP, and Cloud Technologies.
+- Current GPA: 4.0.
 
-Housing Stability: Eviction applications in Toronto CMA have declined, coupled with an increase in housing starts. These trends indicate gradual improvements in housing stability. However, affordability remains a significant concern, with variations across regions.
+Education:
+- Master's in Data Analysis and Applied Machine Intelligence, Northeastern University (2024 - 2025).
+- M.B.B.S (MD Equivalent), Mysore Medical College, Rajiv Gandhi University of Health Sciences.
 
-Financial Stability: The Gini Coefficient analysis reveals rising income inequality in Toronto City over decades. Predictive models indicate a further increase in income disparity. Additionally, regions like York and Peel exhibit persistently high low-income levels, highlighting the need for targeted interventions.
+Projects:
+1. CommunityServiceBot – AI chatbot for Carefirst assisting seniors in accessing healthcare and community services.
+2. RAG Enhanced Presentation Platform (REPP) – AI-powered tool for United Way Greater Toronto to optimize funding applications and reports.
+3. First Aid Tutor – AI-driven RAG-based chatbot for emergency medical guidance.
+4. DiabetesDietBot – AI chatbot for Type 2 Diabetes dietary recommendations.
+5. Airbnb NYC Analysis – Statistical modeling of short-term rental pricing and trends.
+6. Customer Churn Prediction – ML models to predict customer retention using Random Forest & Neural Networks.
+7. Heart Disease Prediction – SVM-based classification achieving 99.03% accuracy.
+8. Investing in Nashville – Predictive ML model for real estate investments.
+9. Loan Approval Prediction – ML-based classification of loan approvals using Logistic Regression & XGBoost.
+10. Magazine Subscription Behavior Analysis – Predictive analytics for customer retention.
 
-Living Wage Projections: Living wage requirements are projected to rise significantly, driven by increasing living costs. By 2040, York and Toronto are expected to have the highest living wage requirements, emphasizing the financial pressures on these regions.
+Work Experience:
+- Data Analyst & Scientific Advisor at Tarsal Education Technologies, focusing on NLP projects.
+- Resident Physician at Cauvery Hospitals, providing direct patient care.
+- Research Assistant at Department of Community Medicine, Mysore.
+- Regulatory Editor at Cactus Communications, working on pharmaceutical documents.
+- Family Physician at Elite Nursing Home, managing general medicine cases.
 
-Unemployment Trends: Observed and predicted unemployment rates demonstrate overall reductions in Toronto CMA and Peel Region. This suggests a positive trend in financial stability. However, disparities between regions necessitate customized employment policies.
+Publications:
+- Psychiatric Care Pathways in South India – Published in BMC Proceedings.
+- Attitudes of Non-Psychiatry Doctors to Psychiatry – Research study in BMC Proceedings.
 
-Demographics and Social Equity: The GTA is experiencing a rapid growth in racialized populations, particularly South Asian, Chinese, and Black communities, expected to increase significantly by 2041. Toronto also hosts a higher concentration of recent immigrants. Educational attainment analysis reveals regional contrasts, with Halton showing a higher share of graduate degrees while Hamilton struggles with high school completion rates.
+Certifications & Language Proficiency:
+- IELTS General: 9/9  
+- IELTS Academic: 8.5/9  
+- Fluent in Python, R, SQL, Power BI, Tableau, LaTeX, and Cloud Computing (AWS, Azure).
 
-Income Inequality: The Low-Income Measure After Tax (LIMAT) data reveals younger age groups are disproportionately affected by poverty, particularly in Toronto and Hamilton. This emphasizes the need for youth-focused poverty alleviation strategies.
-
-Actionable Recommendations: The report provides a roadmap for evidence-based policy-making and resource allocation. Recommendations include targeted interventions for high-need areas, policies addressing income inequality, and initiatives promoting affordable housing and living wages. Furthermore, fostering inclusivity and social cohesion through community engagement is highlighted as a cornerstone of long-term success.
-
-Significance of the Study: This report highlights the interconnectedness of socio-economic indicators and their implications on quality of life. It provides UWGT with an analytical foundation to address systemic challenges and improve community outcomes. By leveraging predictive analytics and domain-specific insights, the study underscores the importance of adaptive strategies to combat inequality and support sustainable development across the GTA.
-
-The authors have collectively contributed to creating a robust and detailed analysis that not only identifies critical challenges but also proposes impactful solutions. This collaborative effort embodies the spirit of teamwork and innovation, aiming to support UWGT in its mission to enhance community well-being and resilience.
+Behavioral Guidelines for the Chatbot:
+- Always reference the resume when answering questions.
+- If a query is outside the scope of the resume, respond with:
+  "This question is beyond my purview to answer."
+- Provide structured and concise answers without unnecessary elaboration.
+- Ensure responses are aligned with Syed Faizan's listed qualifications, skills, and experiences.
 """
 
 # User interaction section
-st.markdown('<div class="section"><h3>Ask our report anything about the Group 1 ALY 6080 Group Project</h3>', unsafe_allow_html=True)
+st.markdown('<div class="section"><h3>Ask my  chatbot anything about my Resume</h3>', unsafe_allow_html=True)
 user_question = st.text_input("")
 if st.button("ASK"):
     prompt = persona + "Here is the question that the user asked: " + user_question
@@ -114,21 +133,25 @@ if st.button("ASK"):
 st.markdown('</div>', unsafe_allow_html=True)
 
 # About Me section
-st.markdown('<div class="section"><h3>About Our ALY 6080 Group 1 Project Deliverables</h3>', unsafe_allow_html=True)
+st.markdown('<div class="section"><h3>About me</h3>', unsafe_allow_html=True)
 with open("images/ALY_6080_Experential_learning_Group_1_Module_12_Capstone_Sponsor_Deliverable.pdf", "rb") as file:
     st.download_button(
-        label="Click here to download our ALY 6080 Capstone Project Report",
+        label="Click here to download my Resume",
         data=file,
         file_name="ALY_6080_Experential_learning_Group_1_Module_12_Capstone_Sponsor_Deliverable.pdf",
         mime="application/pdf"
     )
-st.write("- Our deliverables include an ArcGIS Dashboard and story for Geographic Information and demographic analysis, Power BI Dashboards, Jupyter Notebook and R files, a Github repository, a report and this app")
-st.write("- Our Project focuses primarily on the demographics, housing stability and financial stability in the Toronto GTA and the interaction of these three domains")
-st.write("- We have used Machine Learning predictive algorithms, Python and R for Exploratory Data Analysis, Latex for report formulation and, Github and Gemini API, HTML,CSS and streamlit for our app")
+st.write(" Welcome to my Resume Chatbot!
+My name is Syed Faizan, and I am a Data Analyst and Machine Learning Engineer , trained physician with a deep passion for advancing healthcare and other sectors like finance, banking, agriculture, and education through technology. My primary research interests lie in Computational Radiology, particularly in Inverse Supervised Learning for medical imaging analysis and Multimodal Models for healthcare applications. I am fascinated by how cutting-edge AI techniques can address disparities in healthcare delivery, improve diagnostic accuracy, and empower clinicians to make data-driven decisions. Leveraging my background in medicine and machine learning, I aspire to contribute to innovative solutions at the intersection of technology and healthcare.")
+st.write(" My professional life has been an exciting journey from clinical practice in India to the world of data analytics and machine learning. After earning my Bachelor of Medicine and Bachelor of Surgery from Rajiv Gandhi University of Health Sciences, I spent over a decade as a physician, excelling in clinical research and patient care. I further honed my skills as a resident physician at clinics, hospitals, and nursing homes. During this period, I developed a nuanced understanding of healthcare systems and their challenges. ")
+st.write("Currently, I am pursuing a Master of Professional Studies in Analytics with a concentration in Applied Machine Learning at Northeastern University (January 2024–December 2025). My academic achievements include maintaining a GPA of 4.0 and several projects, including REPP a RAG based platform that was featured in the Northeastern University Showcase as a poster.
+Throughout my career, I have consistently blended medical expertise with analytical skills. As a Research Assistant (April 2022–January 2023), I contributed to public health studies, including the Government of Karnataka’s study on nutritional status and diabetes prevalence in urban slums. My work not only streamlined data collection processes but also improved data entry accuracy by 20%. These experiences have deepened my commitment to leveraging data to address real-world healthcare challenges.
+I have also collaborated in cross-functional teams as a Pharma Regulatory Editor at Cactus Communications (October 2021–March 2022), ensuring timely submission of critical documents with a 95% on-time success rate. My research contributions have been recognized internationally, including publications in esteemed journals like the Australian & New Zealand Journal of Psychiatry and BMC Proceedings.
+Looking ahead, I am excited to explore opportunities in Data Analysis and Machine Learning that allow me to contribute to impactful projects. Whether it’s analysing financial data, integrating AI into the banking sector, solving healthcare challenges with AI or innovating new AI tools, I am eager to bring my unique blend of medical knowledge and data expertise to dynamic teams and forward-thinking organizations.")
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Contact Me section
-st.markdown('<div class="section"><h3>Contact the Team Lead Syed Faizan</h3>', unsafe_allow_html=True)
+st.markdown('<div class="section"><h3>Contact Syed Faizan</h3>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 
 with col2:
