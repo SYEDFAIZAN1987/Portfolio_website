@@ -52,7 +52,7 @@ st.markdown(
 # Header section with an image
 st.markdown('<div class="header"><h1>Hello 👋</h1><h2> I am Syed Faizan</h2></div>', unsafe_allow_html=True)
 
-col1 = st.columns(1)
+col1, = st.columns(1)
 
 with col1:
     st.image("images/Photo for portfolio.jpeg", use_container_width=True, caption="Syed Faizan")
