@@ -55,7 +55,7 @@ st.markdown('<div class="header"><h1>Hello 👋</h1><h2> I am Syed Faizan</h2></
 col1, = st.columns(1)
 
 with col1:
-    st.image("images/Photo for portfolio.jpeg", use_container_width=True, caption="Syed Faizan")
+    st.image("images/faizan.jpeg", use_container_width=True, caption="Syed Faizan")
 
 
 
@@ -134,11 +134,11 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 # About Me section
 st.markdown('<div class="section"><h3>About me</h3>', unsafe_allow_html=True)
-with open("images/ALY_6080_Experential_learning_Group_1_Module_12_Capstone_Sponsor_Deliverable.pdf", "rb") as file:
+with open("images/sf_resume.pdf", "rb") as file:
     st.download_button(
         label="Click here to download my Resume",
         data=file,
-        file_name="ALY_6080_Experential_learning_Group_1_Module_12_Capstone_Sponsor_Deliverable.pdf",
+        file_name="sf_resume.pdf",
         mime="application/pdf"
     )
 st.write(" Welcome to my Resume Chatbot! My name is Syed Faizan, and I am a Data Analyst and Machine Learning Engineer , trained physician with a deep passion for advancing healthcare and other sectors like finance, banking, agriculture, and education through technology. My primary research interests lie in Computational Radiology, particularly in Inverse Supervised Learning for medical imaging analysis and Multimodal Models for healthcare applications. I am fascinated by how cutting-edge AI techniques can address disparities in healthcare delivery, improve diagnostic accuracy, and empower clinicians to make data-driven decisions. Leveraging my background in medicine and machine learning, I aspire to contribute to innovative solutions at the intersection of technology and healthcare.")
@@ -162,21 +162,4 @@ with col3:
      st.markdown('<div class="button"><a href="https://github.com/SYEDFAIZAN1987">GitHub</a></div>', unsafe_allow_html=True)
      st.markdown('</div>', unsafe_allow_html=True)
 
-# Gallery section
-st.markdown('<div class="section"><h3>Gallery</h3>', unsafe_allow_html=True)
-col1, col2, col3 = st.columns(3)
 
-with col1:
-    st.image("images/col1 pic 1.jpeg")
-
-    st.image("images/col 2 pic 3.jpeg")
-
-
-with col2:
-    st.image("images/col 2 pic 1.jpeg")
-    st.image("images/col 2 pic 2.jpeg")
-
-with col3:
-    st.image("images/Pravalika.jpeg")
-    st.image("images/VrajShah.jpeg")
-st.markdown('</div>', unsafe_allow_html=True)
