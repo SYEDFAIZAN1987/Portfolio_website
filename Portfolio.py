@@ -89,7 +89,7 @@ st.markdown('<div class="header"><h1>Hello 👋</h1><h2> I am Syed Faizan</h2></
 col1,col2,col3 = st.columns(3)
 
 with col2:
-    st.image("images/faizan.jpeg", use_container_width=False, caption="Syed Faizan")
+    st.image("images/faizan.jpeg", use_container_width=False, caption="Syed Faizan, MD")
 
 st.markdown("<div class=\"header\"><h1> Talk to my Resume Bot</h1></div>", unsafe_allow_html=True)
 
