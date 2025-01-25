@@ -105,17 +105,14 @@ Hugging Face: https://huggingface.co/DrSyedFaizan
 
 # Function to get OpenAI response
 def ask_openai(question):
-    try:
-        prompt = persona + "\n\nUser's question: " + question
-        response = openai.ChatCompletion.create(
-            model="gpt-4",  # You can change this to "gpt-3.5-turbo" if needed
-            messages=[{"role": "system", "content": persona},
-                      {"role": "user", "content": question}],
-            max_tokens=300  # Limiting response length to prevent overuse
-        )
-        return response["choices"][0]["message"]["content"]
-    except openai.error.OpenAIError as e:
-        return f"⚠️ OpenAI API Error: {str(e)}"
+    prompt = persona + "\n\nUser's question: " + question
+    response = openai.ChatCompletion.create(
+        model="gpt-4",  # You can change this to "gpt-3.5-turbo" if needed
+        messages=[{"role": "system", "content": persona},
+                  {"role": "user", "content": question}],
+        max_tokens=300  # Limiting response length to prevent overuse
+    )
+    return response["choices"][0]["message"]["content"]
 
 # User interaction section
 st.markdown('<div class="section"><h3>Ask my chatbot anything about my Resume</h3>', unsafe_allow_html=True)
