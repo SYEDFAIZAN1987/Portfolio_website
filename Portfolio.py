@@ -300,9 +300,9 @@ with open("images/sf_resume.pdf", "rb") as file:
         mime="application/pdf"
     )
 st.write("""
-# Welcome to my website!
+# Welcome to my Resume Chatbot!
 
-### **About Me**
+###
 My name is **Syed Faizan**, and I am a **Data Analyst and Machine Learning Engineer**, as well as a trained **physician** with a deep passion for advancing healthcare and other sectors like **finance, banking, agriculture, and education** through technology. 
 
 My primary research interests lie in **Computational Radiology**, particularly in **Inverse Supervised Learning for medical imaging analysis** and **Multimodal Models for healthcare applications**. I am fascinated by how cutting-edge AI techniques can address **disparities in healthcare delivery, improve diagnostic accuracy, and empower clinicians** to make data-driven decisions. Leveraging my background in **medicine and machine learning**, I aspire to contribute to **innovative solutions at the intersection of technology and healthcare**.
