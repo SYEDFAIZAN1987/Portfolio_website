@@ -5,48 +5,83 @@ import openai
 api_key = st.secrets["OPENAI_API_KEY"]
 openai.api_key = api_key
 
-# Add custom CSS for styling
+# Add improved custom CSS for styling
 st.markdown(
     """
     <style>
+    /* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F4F8FB;
+    }
+
+    /* Header Styling */
     .header {
-        background-color: #ADD8E6;
+        background: linear-gradient(135deg, #6DD5FA, #2980B9);
         color: white;
-        padding: 10px;
-        border-radius: 10px;
-        text-align: center;
-    }
-    .subheader {
-        background-color: #87CEEB;
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-        text-align: center;
-    }
-    .section {
-        background-color: #E0FFFF;
-        color: #4682B4;
         padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 20px;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
     }
-    .button {
-        background-color: #4682B4;
+
+    /* Subheader Styling */
+    .subheader {
+        background: linear-gradient(135deg, #87CEEB, #4682B4);
         color: white;
-        padding: 10px;
-        border-radius: 10px;
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /* Section Box */
+    .section {
+        background: white;
+        color: #333;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Buttons */
+    .button {
+        background: linear-gradient(135deg, #4682B4, #1E3C72);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
         text-align: center;
         display: inline-block;
-        margin-top: 10px;
+        margin-top: 15px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
     }
+
+    .button:hover {
+        background: linear-gradient(135deg, #1E3C72, #0F1B4C);
+        transform: scale(1.05);
+    }
+
     .button a {
         color: white;
         text-decoration: none;
+        font-size: 16px;
+    }
+
+    /* Centering content */
+    .center {
+        text-align: center;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # Header section with an image
 st.markdown('<div class="header"><h1>Hello 👋</h1><h2> I am Syed Faizan</h2></div>', unsafe_allow_html=True)
