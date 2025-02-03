@@ -125,7 +125,26 @@ M.B.B.S (MD Equivalent, Bachelor Of Medicine and Bachelor Of Surgery)
 Rajiv Gandhi University of Health Sciences, Mysore Medical College • Karnataka, India
 PROJECTS
 
-CommunityServiceBot • 01/2025 - Present
+Crrently I am working on a Lung Tumour Segmentation project using UNET . 
+
+The following are my Medical Imaging Analysis Projects - 
+Projects
+
+1. 3D Liver Segmentation: Developed a UNet-based model for liver and tumor segmentation from 3D medical images, achieving
+precise results validated through visual and loss analysis.
+2. Left Atrium Segmentation: Built a U-Net model for cardiac MRI images, achieving a Dice Similarity Coefficient of 0.95.
+3. Cardiac Detection: Implemented a customized ResNet-18 model with PyTorch Lightning for identifying cardiac abnormalities
+using medical imaging data.
+4. Pneumonia Classification: Built a ResNet-18 based classifier for chest X-ray analysis, achieving 84.5% validation accuracy
+with CAM visualization.
+
+The following are my Computer Vision Projects - 
+ANN for MNIST: Developed an Artificial Neural Network using PyTorch, achieving 98.5% training and 97.8% validation
+accuracy.
+CNN for MNIST: Implemented convolutional layers with high accuracy of 98% through supervised learning.
+
+
+CommunityServiceBot • 01/2025 - 01/2025
 CareFirst
 
 • I developed the evaluation pipeline and tuned the Community Service Chatbot, which is a proprietary AIdriven assistant designed for Carefirst Ontario Services, primarily serving seniors in Toronto.
