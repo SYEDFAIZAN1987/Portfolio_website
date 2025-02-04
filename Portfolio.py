@@ -253,6 +253,16 @@ Analyzing Income Inequality Using KNN
 Tools & Technologies: R, Regression Modeling
 Description: Analyzed used car pricing trends and key valuation factors using regression models.
 WORK EXPERIENCE
+United Way Greater Toronto (UWGT) Toronto, Canada
+Team Lead, Data Analyst Consultant Sept 2024 – Dec 2024
+Led data analysis and visualization for UWGT under Northeastern University’s Experiential Learning course. Developed code in R for Data
+Analysis, RAG enhanced presentation platform (REPP) for report presentation, and dynamic Power BI dashboards analyzing socio-economic
+trends in the Greater Toronto Area, covering demographics, financial and housing stability, and community services. Integrated datasets
+from Statistics Canada and NGOs, utilizing advanced DAX for predictive models on income inequality and housing needs. Awarded 1st
+rank as Team Lead by United Way Greater Toronto and showcased the project as a poster at the Northeastern University Showcase in
+December 2024. Demonstrated expertise in data-driven insights, stakeholder engagement, and impactful storytelling through interactive
+dashboards.
+
 
 Tarsal Education Technologies, Toronto, Ontario, Canada. • Remote • 03/2024 - 12/2024
 Data Analyst and Scientific Advisor • Contractor
