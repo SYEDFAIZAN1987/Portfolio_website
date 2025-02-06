@@ -338,7 +338,7 @@ LaTeX, Machine ​Learning, Python, R ​Programming ​Language, SQL, Statistic
 def ask_openai(question):
     prompt = persona + "\n\nUser's question: " + question
     response = openai.ChatCompletion.create(
-        model="gpt-4",  # You can change this to "gpt-3.5-turbo" if needed
+        model="gpt-3.5-turbo",  # You can change this to "gpt-3.5-turbo" if needed
         messages=[{"role": "system", "content": persona},
                   {"role": "user", "content": question}],
         max_tokens=300  # Limiting response length to prevent overuse
